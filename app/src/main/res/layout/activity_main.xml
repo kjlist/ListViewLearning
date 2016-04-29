@@ -6,10 +6,10 @@
 
     tools:context="as.laoli.com.listviewlearning.MainActivity">
 
-    <ListView
+    <as.laoli.com.listviewlearning.ReflashListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listview">
 
-    </ListView>
+    </as.laoli.com.listviewlearning.ReflashListView>
 </RelativeLayout>

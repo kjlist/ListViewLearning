@@ -6,15 +6,18 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//1.添加提示界面
+//监听滚动事件
+//监听onTouch事件
+//
 public class MainActivity extends AppCompatActivity {
     private List<item_bean> mDatas;
-    private ListView listView;
+    private ReflashListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView= (ListView) findViewById(R.id.listview);
+        listView= (ReflashListView) findViewById(R.id.listview);
         //下面一行容易忘记啊!!!!
         mDatas=new ArrayList<item_bean>();
         for (int i=0;i<10;i++){
