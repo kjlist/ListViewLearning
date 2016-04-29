@@ -55,6 +55,13 @@ public class MyAdapter extends BaseAdapter {
         holder.content.setText(mDatas.get(position).title);
         return convertView;
     }
+
+    public void OnDataChange(List<item_bean> mDatas) {
+        this.mDatas=mDatas;
+        //有数据变化的时候调用,会自动的刷新界面
+        this.notifyDataSetChanged();
+    }
+
     class ViewHolder{
         public ImageView image_icon;
         public TextView title;
